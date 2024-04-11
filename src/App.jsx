@@ -3,31 +3,44 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/react.svg'
 import './App.css'
 
-const Container = ({
-	className = "block"
+const Img = ({
+	src,
+	className,
+	alt
 }) => {
-	return (
-		<div className={className}>
-			<div className="scroll"></div>
-		</div>
+	return(
+		<img src={src} className={className} alt={alt} />
 	);
 };
 
+const Label = ({
+	text,
+	className = "label-default"
+}) => {
+	return(
+		<span className={className}>{text}</span>
+	);
+};
 
 function App() {
 	const [count, setCount] = useState(0)
 
 	return (
 		<>
-			<Container 
-				className = "user_info block"
+			<Img
+				src="src/images/user_foto.jpg" 
+				className = "round"
+				alt="Упс! Фото пропало."
 			/>
-			<Container 
-				className = "user_skills block"
+			<Label
+				text="Задера"
+				className="label-title"
 			/>
-			<Container 
-				className = "user_technology block"
+			<Label
+				text="Валерий Сергеевич"
+				className="label-default"
 			/>
+
 		</>
 	)
 }
