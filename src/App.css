@@ -5,11 +5,29 @@
 .card {
 	width: 50%;
 	margin: 1em;
-	border: 2px solid red
+	padding: 0.5em;
+	border: 2px solid #2a5774;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
 }
 
-
-.round {
-	width: 6em;
-	border-radius: 6em;
+.user {
+	flex-direction: row;
+	align-items: center;
 }
+	.round {
+		width: 5em;
+		border-radius: 5em;
+	}
+	.username {
+		color: #4f90a6;
+		font-size: 1.25em;
+		margin-left: 20px;
+	}
+
+.skills {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
