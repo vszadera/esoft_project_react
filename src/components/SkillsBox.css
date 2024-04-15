@@ -13,9 +13,24 @@
 		justify-content: center;
 		
 	}
-	.username {
-		color: #4f90a6;
-		font-size: 1.15em;
-		margin-left: 20px;
-        font-weight: bolder;
+	.skillbox div:not(:first-child) {
+		width: calc(100% - 10px);
+		margin: 0px 5px 5px 5px;
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px dotted #2a5774;
 	}
+	.skillbox div:last-child {
+		border-bottom: none;
+	}
+
+		.skillbox .skills_title {
+			color: #4f90a6;
+			font-weight: bolder;
+			font-size: 1em;
+		}
+		.skillbox .skills_description {
+			color: #4f90a6;
+			font-size: 0.8em;
+		} 
+

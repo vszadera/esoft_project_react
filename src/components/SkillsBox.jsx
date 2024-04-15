@@ -6,28 +6,28 @@ import './SkillsBox.css';
 
 // Компоненты. Бокс со списком навыков.
 export const SkillsBox = ({
-	arraySkills,
-	name,
-	description
+	title,	
+	arraySkills
 }) => {
 
 	return(
 		<>
 			<div className = "skillbox box">
-				<div className = "title">
+				<div className="title"> 
 					<Label
-						value = "Перечень навыков"
+						value = { title }
 					/>
 				</div>
+
 				{ arraySkills.map(skills_item => (
-					<div>
+					<div key={ skills_item.id }>
 						<Label
 							value = { skills_item.skill_name }
-							className = "item_skills" 
+							className = "skills_title" 
 						/>
 						<Label
 							value = { skills_item.description }
-							className = "item_description" 
+							className = "skills_description" 
 						/>
 					</div>
 				)) }
