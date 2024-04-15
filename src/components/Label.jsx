@@ -6,6 +6,6 @@ export const Label = ({
 	className
 }) => {
 	return(
-		<span className = { className }>{ value }</span>
+		<span className = { className && className }>{ value }</span>
 	);
 };
