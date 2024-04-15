@@ -1,0 +1,18 @@
+.userbox {
+	flex-direction: row;
+	align-items: center;
+}
+	.userfoto {
+		width: 4em;
+        padding: 1px;
+		margin: 10px;
+		border-radius: 4em;
+        border: 2px solid #2a5774;
+        box-shadow: none;
+	}
+	.username {
+		color: #4f90a6;
+		font-size: 1.15em;
+		margin: 10px;
+        font-weight: bolder;
+	}
