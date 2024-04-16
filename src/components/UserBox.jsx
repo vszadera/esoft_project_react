@@ -1,4 +1,4 @@
-import React from "react";
+import {} from "react";
 
 import { Img } from '/src/components/Img';
 import { Label } from '/src/components/Label';

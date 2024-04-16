@@ -1,14 +1,23 @@
-import React from "react";
-
-import { Img } from '/src/components/Img';
+import { useState } from 'react';
 import { Label } from '/src/components/Label';
+import { ItemBox } from '/src/components/ItemBox';
+import IconButton from '@mui/material/IconButton';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import './SkillsBox.css';
+
 
 // Компоненты. Бокс со списком навыков.
 export const SkillsBox = ({
+	is_inputbox = false,
 	title,	
 	arraySkills
 }) => {
+	const [visible, setVisible] = useState(false);
+
+	const onClick = () => {
+		setVisible(visible => !visible);
+	}
 
 	return(
 		<>
@@ -17,17 +26,29 @@ export const SkillsBox = ({
 					<Label
 						value = { title }
 					/>
+					<Label
+						value = { visible }
+					/>
+					<IconButton 
+						className="icon_button"
+						onClick = { onClick } 
+						title = { visible ? "Скрыть компетенции" : "Отобразить компетенции" }
+					>
+						{ visible ? <KeyboardArrowUpIcon/> : <KeyboardArrowDownIcon/> }
+					</IconButton>
 				</div>
+				{ is_inputbox && 
+					<div> 
+						<button>
+							Test
+						</button>
+					</div>
+				}
 
-				{ arraySkills.map(skills_item => (
+				{ visible && arraySkills.map(skills_item => (
 					<div key={ skills_item.id }>
-						<Label
-							value = { skills_item.skill_name }
-							className = "skills_title" 
-						/>
-						<Label
-							value = { skills_item.description }
-							className = "skills_description" 
+						<ItemBox
+							itembox = { skills_item }
 						/>
 					</div>
 				)) }

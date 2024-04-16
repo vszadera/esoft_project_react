@@ -11,8 +11,20 @@
 		border-radius: 8px 8px 0px 0px;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		
 	}
+		.skillbox .title span {
+			margin-left: 10px;
+		}
+
+		.skillbox .icon_button {
+			width: 1em;
+			height: 1em;
+			margin-right: 10px;
+			margin-left: auto;
+		}
+
 	.skillbox div:not(:first-child) {
 		width: calc(100% - 10px);
 		margin: 0px 5px 5px 5px;
@@ -24,13 +36,4 @@
 		border-bottom: none;
 	}
 
-		.skillbox .skills_title {
-			color: #4f90a6;
-			font-weight: bolder;
-			font-size: 1em;
-		}
-		.skillbox .skills_description {
-			color: #4f90a6;
-			font-size: 0.8em;
-		} 
 
