@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { Label } from '/src/components/Label';
+import { Label } from '/src/components/Label/Label';
 import './ItemBox.css';
 
 // Компоненты. Элемент бокса навыков.

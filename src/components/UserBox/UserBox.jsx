@@ -1,7 +1,7 @@
 import {} from "react";
 
-import { Img } from '/src/components/Img';
-import { Label } from '/src/components/Label';
+import { Image } from '/src/components/Image/Image';
+import { Label } from '/src/components/Label/Label';
 import './UserBox.css';
 
 // Компоненты. Пользовательский бокс.
@@ -13,7 +13,7 @@ export const UserBox =({
 		<>
 			<div className = "userbox box">
 				<div>			
-					<Img
+					<Image
 						src = { userfoto.src }
 						className = { userfoto.className }
 						alt = { userfoto.alt } 

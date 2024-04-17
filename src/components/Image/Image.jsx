@@ -1,7 +1,6 @@
 // Компоненты. Изображение
-import React from "react";
 
-export const Img = ({
+export const Image = ({
 	src,
 	className,
 	alt

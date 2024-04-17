@@ -1,10 +1,7 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/react.svg';
 import './App.css';
 
-import { UserBox } from '/src/components/UserBox';
-import { SkillsBox } from '/src/components/SkillsBox';
+import { UserBox } from '/src/components/UserBox/UserBox';
+import { SkillsBox } from '/src/components/SkillsBox/SkillsBox';
 
 
 // Массив данных с навыками пользователя. Тут мы их типа получили из БД
@@ -46,6 +43,7 @@ function App() {
 				}}	
 			/>
 			<SkillsBox
+				is_inputbox = { true }
 				title = "Перечень навыков:"
 				arraySkills = { my_skills }
 			/>

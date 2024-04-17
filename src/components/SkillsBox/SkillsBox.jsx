@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Label } from '/src/components/Label';
-import { ItemBox } from '/src/components/ItemBox';
+import { Label } from '/src/components/Label/Label';
+import { ItemBox } from '/src/components/ItemBox/ItemBox';
+import { InputBox } from '/src/components/InputBox/InputBox'
 import IconButton from '@mui/material/IconButton';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
@@ -37,13 +38,7 @@ export const SkillsBox = ({
 						{ visible ? <KeyboardArrowUpIcon/> : <KeyboardArrowDownIcon/> }
 					</IconButton>
 				</div>
-				{ is_inputbox && 
-					<div> 
-						<button>
-							Test
-						</button>
-					</div>
-				}
+				{ is_inputbox && <InputBox /> }
 
 				{ visible && arraySkills.map(skills_item => (
 					<div key={ skills_item.id }>

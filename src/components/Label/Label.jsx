@@ -1,5 +1,4 @@
 // Компоненты. Текст (не изменяемый)
-import React from "react";
 
 export const Label = ({
 	value,
