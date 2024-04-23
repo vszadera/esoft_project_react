@@ -4,8 +4,10 @@ import { Slider } from '/src/components/Slider/Slider';
 import './InputBox.css';
 
 // Компоненты. Элемент бокса навыков.
-export const InputBox = () => {
-	const [level, setLevel] = useState(25)
+export const InputBox = ({
+	this_value
+}) => {
+	const [level, setLevel] = useState(this_value)
 	const handleChange = (level) => {
 		setLevel(level)
 	}
@@ -19,7 +21,6 @@ export const InputBox = () => {
 				/>
 				<input 
 					className = "input"
-					onChange = ""
 				>
 				</input>
 				<Label
@@ -28,7 +29,6 @@ export const InputBox = () => {
 				/>
 				<input 
 					className = "input"
-					onChange = ""
 				>
 				</input>
 				<Label

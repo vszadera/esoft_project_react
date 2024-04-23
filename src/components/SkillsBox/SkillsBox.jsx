@@ -27,9 +27,6 @@ export const SkillsBox = ({
 					<Label
 						value = { title }
 					/>
-					<Label
-						value = { visible }
-					/>
 					<IconButton 
 						className="icon_button"
 						onClick = { onClick } 
@@ -38,7 +35,11 @@ export const SkillsBox = ({
 						{ visible ? <KeyboardArrowUpIcon/> : <KeyboardArrowDownIcon/> }
 					</IconButton>
 				</div>
-				{ is_inputbox && <InputBox /> }
+				{ is_inputbox && 
+					<InputBox 
+						this_value = { 30 }
+					/> 
+				}
 
 				{ visible && arraySkills.map(skills_item => (
 					<div key={ skills_item.id }>

@@ -6,10 +6,10 @@ import { SkillsBox } from '/src/components/SkillsBox/SkillsBox';
 
 // Массив данных с навыками пользователя. Тут мы их типа получили из БД
 const my_skills = [
-	{ id: 0, skill_name: "Навык 1", description: "Тут описание для навыка 1" },
-	{ id: 1, skill_name: "Навык 2", description: "Тут описание для навыка 2" },
-	{ id: 2, skill_name: "Навык 3", description: "Тут описание для навыка 3" },
-	{ id: 3, skill_name: "Навык 4", description: "Тут описание для навыка 4" }
+	{ id: 0, skill_name: "Навык 1", level: 10, description: "Тут описание для навыка 1" },
+	{ id: 1, skill_name: "Навык 2", level: 20, description: "Тут описание для навыка 2" },
+	{ id: 2, skill_name: "Навык 3", level: 30, description: "Тут описание для навыка 3" },
+	{ id: 3, skill_name: "Навык 4", level: 40, description: "Тут описание для навыка 4" }
 ];
 
 // Массив данных с требуемыми к изучению технологиями. Тут мы их типа получили из БД

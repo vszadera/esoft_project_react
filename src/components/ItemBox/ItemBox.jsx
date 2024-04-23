@@ -19,6 +19,10 @@ export const ItemBox = ({
 				className = "itembox_title" 
 			/>
 			<Label
+				value = { itembox.level && ('Уровень овладения навыком: ' + itembox.level + ' %') }
+				className = "itembox_description" 
+			/>
+			<Label
 				value = { itembox.description && itembox.description }
 				className = "itembox_description" 
 			/>

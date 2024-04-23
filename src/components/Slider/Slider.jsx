@@ -24,7 +24,7 @@ export const Slider = ({
 				step = { step_value }
 				value = { value }
 				onChange = { handleSliderChange }
-			/>
+			/>	
 		</div>
   );
 }
